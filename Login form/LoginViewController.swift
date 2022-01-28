@@ -18,18 +18,15 @@ class ViewController: UIViewController {
     private let user = "User"
     private let password = "Password"
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+   
         // MARK: - background
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "bg_image")
         self.view.insertSubview(backgroundImage, at: 0)
         
         loginButton.layer.cornerRadius = 10
-        
     }
     
     // MARK: - help user
@@ -49,10 +46,6 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
-    
-    // MARK: -
-
-        
-    }
+}
 
 

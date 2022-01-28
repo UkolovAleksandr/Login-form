@@ -144,6 +144,9 @@
                             <constraint firstItem="Fa4-tQ-LIN" firstAttribute="top" secondItem="75o-y5-m4h" secondAttribute="top" constant="84" id="ky0-FS-ha2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLeble" destination="Fa4-tQ-LIN" id="xgw-kW-Ofy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyd-63-eik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
