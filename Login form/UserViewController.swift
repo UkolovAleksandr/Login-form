@@ -24,7 +24,7 @@ class UsersViewController: UIViewController {
         backgroundImage.image = UIImage(named: "IMG_3537")
         self.view.insertSubview(backgroundImage, at: 0)
     }
-    // exit
+    // MARK: - Exit
     @IBAction func LogOut() {
         dismiss(animated: true)
     }
