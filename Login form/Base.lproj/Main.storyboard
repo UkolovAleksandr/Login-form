@@ -62,6 +62,9 @@
                                                 <state key="normal" title="Forgot User Name?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="forgotUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="DbB-l5-1Zx"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-BY-QO8">
                                                 <rect key="frame" x="121" y="0.0" width="109" height="28"/>
@@ -70,6 +73,9 @@
                                                 <state key="normal" title="Forgot Password?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="forgotUserPassport" destination="BYZ-38-t0r" eventType="touchUpInside" id="GKu-pf-XvE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -87,6 +93,8 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="4xN-dH-q1h" id="sdh-cP-iPR"/>
+                        <outlet property="passwordTextField" destination="L0C-gq-jio" id="M8Q-mV-oNy"/>
+                        <outlet property="userNameTextField" destination="1nN-rP-PFs" id="Xu6-d2-FHN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,9 +113,12 @@
                                 <rect key="frame" x="123.5" y="405" width="73" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log out"/>
+                                <connections>
+                                    <action selector="LogOut" destination="54D-XJ-36Z" eventType="touchUpInside" id="DGC-SW-xcU"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lok Up " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa4-tQ-LIN">
-                                <rect key="frame" x="120.5" y="84" width="79" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa4-tQ-LIN" userLabel="Welcome Labl">
+                                <rect key="frame" x="111.5" y="84" width="97" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="4Nl-MJ-Ufc"/>
                                 </constraints>
