@@ -9,9 +9,7 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
-
     @IBOutlet var welcomeLable: UILabel!
-
     
     var user = ""
     
@@ -20,12 +18,11 @@ class WelcomeViewController: UIViewController {
         
         welcomeLable.text = "Welcome, \(user)!"
         
-
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "IMG_3537")
         self.view.insertSubview(backgroundImage, at: 0)
     }
-
+    
     @IBAction func LogOut() {
         dismiss(animated: true)
     }

@@ -11,20 +11,17 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-
+    
     @IBOutlet weak var loginButton: UIButton!
-
+    
     private let user = "User"
     private let password = "Password"
     
-    
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let WelcomeVC = segue.destination as? WelcomeViewController else { return }
         WelcomeVC.user = user
     }
     
-
     @IBAction func logInPressed() {
         if userNameTextField.text != user || passwordTextField.text != password {
             showAlert(
@@ -38,7 +35,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "bg_image")
         self.view.insertSubview(backgroundImage, at: 0)
@@ -53,7 +49,6 @@ class LoginViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
-    
     
     @IBAction func forgotUserPassword() {
         let alert = UIAlertController(title: "Attention", message: "Your password is \(password)", preferredStyle: .alert)
@@ -80,7 +75,6 @@ extension LoginViewController {
         present(alert, animated: true)
     }
 }
-
 
 extension LoginViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
