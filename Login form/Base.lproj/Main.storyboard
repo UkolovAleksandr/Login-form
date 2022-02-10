@@ -56,6 +56,7 @@
                                             <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="logInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5l-LU-K9e"/>
                                             <segue destination="54D-XJ-36Z" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="ASa-37-8pG"/>
                                         </connections>
                                     </button>
